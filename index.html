@@ -7,7 +7,8 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@zerodevx/navaid@latest"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@zerodevx/svelte-toast@0"></script>
     <script type="module">
-      navaid('zerodevx/navaid')
+      new SvelteToast({ target: document.body })
+      navaid('navaid')
         .on('/normal', () => toast.push('normal'))
         .on('/shadow', () => toast.push('shadow'))
         .listen()
@@ -21,7 +22,6 @@
           }
         }
       )
-      new SvelteToast({ target: document.body })
     </script>
   </head>
   <body>
