@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Navaid Shadow Demo</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/@zerodevx/navaid@latest"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@zerodevx/svelte-toast@0"></script>
+    <script type="module">
+      navaid('zerodevx/navaid')
+        .on('/normal', () => toast.push('normal'))
+        .on('/shadow', () => toast.push('shadow'))
+        .listen()
+      customElements.define('x-test', 
+        class extends HTMLElement {
+          constructor() {
+            super()
+            this
+              .attachShadow({ mode: 'open' })
+              .append(this.querySelector('template').content.cloneNode(true))
+          }
+        }
+      )
+      new SvelteToast({ target: document.body })
+    </script>
+  </head>
+  <body>
+    <a href="https://zerodevx.github.io/navaid/">Reset</a>
+    <br><br>
+    <a href="https://zerodevx.github.io/navaid/normal">Normal anchor link</a>
+    <br><br>
+    <x-test>
+      <template>
+        <a href="https://zerodevx.github.io/navaid/shadow">Shadow-dom anchor link</a>
+      </template>
+    </x-test>
+  </body>
+</html>
