@@ -25,9 +25,9 @@ var x = e.composedPath, x = e.path || x && x() || [e.target], x = x[0].closest('
 | Package   | Version       | Size      |
 |-----------|---------------|-----------|
 | Original  | v1.2.0        | 909 bytes |
-| Forked    | v1.2.0-fork.1 | 934 bytes |
+| Forked    | v1.2.0-fork.2 | 934 bytes |
 
-Demo: https://plnkr.co/edit/P3CcbfaMI5hQO8xj
+Demo: https://zerodevx.github.io/navaid/
 
 #### Install with NPM
 

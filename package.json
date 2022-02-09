@@ -1,6 +1,7 @@
 {
   "name": "@zerodevx/navaid",
-  "version": "1.2.0-fork.1",
+  "version": "1.2.0-fork.2",
+  "umd:name": "navaid",
   "repository": "zerodevx/navaid",
   "description": "A navigation aid (aka, router) for the browser in 865 bytes~!",
   "unpkg": "dist/navaid.min.js",
