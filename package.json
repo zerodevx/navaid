@@ -1,9 +1,9 @@
 {
   "name": "@zerodevx/navaid",
-  "version": "1.2.0-fork.2",
-  "umd:name": "navaid",
+  "version": "1.2.0-fork.3",
   "repository": "zerodevx/navaid",
-  "description": "A navigation aid (aka, router) for the browser in 865 bytes~!",
+  "description": "Fork of Navaid with shadow dom support",
+  "umd:name": "navaid",
   "unpkg": "dist/navaid.min.js",
   "module": "dist/navaid.mjs",
   "main": "dist/navaid.js",

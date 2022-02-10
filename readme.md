@@ -25,7 +25,7 @@ var x = e.composedPath, x = e.path || x && x() || [e.target], x = x[0].closest('
 | Package   | Version       | Size      |
 |-----------|---------------|-----------|
 | Original  | v1.2.0        | 909 bytes |
-| Forked    | v1.2.0-fork.2 | 934 bytes |
+| Forked    | v1.2.0-fork.3 | 934 bytes |
 
 Demo: https://zerodevx.github.io/navaid/
 
@@ -39,7 +39,7 @@ $ npm i -D @zerodevx/navaid
 
 ```html
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/@zerodevx/navaid@1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@zerodevx/navaid@latest"></script>
   ...
 </head>
 ```
